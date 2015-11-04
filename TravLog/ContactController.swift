@@ -23,7 +23,7 @@ class ContactController: UIViewController, MFMailComposeViewControllerDelegate {
                 self.showSendMailErrorAlert()
             }
         }
-        
+    
         func configuredMailComposeViewController() -> MFMailComposeViewController {
             let mailComposerVC = MFMailComposeViewController()
             mailComposerVC.mailComposeDelegate = self // Extremely important to set the --mailComposeDelegate-- property, NOT the --delegate-- property
