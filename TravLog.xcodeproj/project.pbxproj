@@ -15,6 +15,10 @@
 		187FE9281BEAB0C70029A8BC /* survey.png in Resources */ = {isa = PBXBuildFile; fileRef = 187FE9201BEAB0C70029A8BC /* survey.png */; };
 		187FE9291BEAB0C70029A8BC /* travel.png in Resources */ = {isa = PBXBuildFile; fileRef = 187FE9211BEAB0C70029A8BC /* travel.png */; };
 		187FE92A1BEAB0C70029A8BC /* uvmTower.bmp in Resources */ = {isa = PBXBuildFile; fileRef = 187FE9221BEAB0C70029A8BC /* uvmTower.bmp */; };
+		18A8FB2E1BEBC06F007273DD /* bus.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FB2B1BEBC06F007273DD /* bus.png */; };
+		18A8FB2F1BEBC06F007273DD /* home.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FB2C1BEBC06F007273DD /* home.png */; };
+		18A8FB301BEBC06F007273DD /* train.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FB2D1BEBC06F007273DD /* train.png */; };
+		18A8FB321BEBC160007273DD /* ufo.png in Resources */ = {isa = PBXBuildFile; fileRef = 18A8FB311BEBC160007273DD /* ufo.png */; };
 		DA3455111BD9DD6D00D1AC22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3455101BD9DD6D00D1AC22 /* AppDelegate.swift */; };
 		DA3455131BD9DD6D00D1AC22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3455121BD9DD6D00D1AC22 /* ViewController.swift */; };
 		DA3455161BD9DD6D00D1AC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3455141BD9DD6D00D1AC22 /* Main.storyboard */; };
@@ -47,6 +51,10 @@
 		187FE9201BEAB0C70029A8BC /* survey.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = survey.png; path = ../../imgs/survey.png; sourceTree = "<group>"; };
 		187FE9211BEAB0C70029A8BC /* travel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = travel.png; path = ../../imgs/travel.png; sourceTree = "<group>"; };
 		187FE9221BEAB0C70029A8BC /* uvmTower.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; name = uvmTower.bmp; path = ../../imgs/uvmTower.bmp; sourceTree = "<group>"; };
+		18A8FB2B1BEBC06F007273DD /* bus.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bus.png; path = ../../imgs/bus.png; sourceTree = "<group>"; };
+		18A8FB2C1BEBC06F007273DD /* home.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home.png; path = ../../imgs/home.png; sourceTree = "<group>"; };
+		18A8FB2D1BEBC06F007273DD /* train.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = train.png; path = ../../imgs/train.png; sourceTree = "<group>"; };
+		18A8FB311BEBC160007273DD /* ufo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ufo.png; path = ../../imgs/ufo.png; sourceTree = "<group>"; };
 		DA34550D1BD9DD6D00D1AC22 /* TravLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3455101BD9DD6D00D1AC22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3455121BD9DD6D00D1AC22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +93,10 @@
 		187FE92B1BEAB0CF0029A8BC /* imgs */ = {
 			isa = PBXGroup;
 			children = (
+				18A8FB311BEBC160007273DD /* ufo.png */,
+				18A8FB2B1BEBC06F007273DD /* bus.png */,
+				18A8FB2C1BEBC06F007273DD /* home.png */,
+				18A8FB2D1BEBC06F007273DD /* train.png */,
 				187FE91B1BEAB0C70029A8BC /* airplane-6.png */,
 				187FE91C1BEAB0C70029A8BC /* iphone.png */,
 				187FE91D1BEAB0C70029A8BC /* location.png */,
@@ -232,15 +244,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18A8FB2E1BEBC06F007273DD /* bus.png in Resources */,
 				187FE9231BEAB0C70029A8BC /* airplane-6.png in Resources */,
 				DA34551B1BD9DD6D00D1AC22 /* LaunchScreen.storyboard in Resources */,
+				18A8FB321BEBC160007273DD /* ufo.png in Resources */,
 				187FE9241BEAB0C70029A8BC /* iphone.png in Resources */,
+				18A8FB301BEBC06F007273DD /* train.png in Resources */,
 				DA3455181BD9DD6D00D1AC22 /* Assets.xcassets in Resources */,
 				187FE9261BEAB0C70029A8BC /* logo.png in Resources */,
 				187FE9281BEAB0C70029A8BC /* survey.png in Resources */,
 				187FE9251BEAB0C70029A8BC /* location.png in Resources */,
 				187FE9291BEAB0C70029A8BC /* travel.png in Resources */,
 				187FE92A1BEAB0C70029A8BC /* uvmTower.bmp in Resources */,
+				18A8FB2F1BEBC06F007273DD /* home.png in Resources */,
 				DA3455161BD9DD6D00D1AC22 /* Main.storyboard in Resources */,
 				187FE9271BEAB0C70029A8BC /* sattelite.png in Resources */,
 			);
