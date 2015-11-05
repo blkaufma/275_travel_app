@@ -60,4 +60,6 @@ class SurveyController: UIViewController {
     /* "Done" button press
         save to database
     */
+    @IBAction func buttonSubmit(sender: UIButton) {
+    }
 }
