@@ -377,10 +377,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-Be-eWw">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-Be-eWw">
                                 <rect key="frame" x="132" y="20" width="150" height="21"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="How did you travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-Aw-So1">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did you travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-Aw-So1">
                                         <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -408,14 +408,7 @@
                                     <constraint firstAttribute="trailing" secondItem="jRg-Aw-So1" secondAttribute="trailing" id="zrm-Wm-cbB"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-NC-kAQ">
-                                <rect key="frame" x="208" y="49" width="150" height="124"/>
-                                <state key="normal" title="Bus" image="bus.png"/>
-                                <connections>
-                                    <action selector="buttonBus:" destination="gwg-sr-GKg" eventType="touchUpInside" id="y2U-KD-u0W"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-wm-kOD">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-wm-kOD">
                                 <rect key="frame" x="20" y="210" width="186" height="153"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="153" id="PwE-0V-lpG"/>
@@ -425,14 +418,14 @@
                                     <action selector="buttonTrain:" destination="gwg-sr-GKg" eventType="touchUpInside" id="S7E-8E-9qt"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q88-dA-bhq">
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q88-dA-bhq">
                                 <rect key="frame" x="208" y="210" width="186" height="153"/>
                                 <state key="normal" title="Other" image="ufo.png"/>
                                 <connections>
                                     <action selector="buttonOther:" destination="gwg-sr-GKg" eventType="touchUpInside" id="HC8-yZ-Lee"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-Rf-RF0">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-Rf-RF0">
                                 <rect key="frame" x="20" y="371" width="374" height="30"/>
                                 <state key="normal" title="I didn't travel"/>
                                 <connections>
@@ -440,24 +433,35 @@
                                     <segue destination="gGX-bt-7ut" kind="show" id="YTy-8N-iGF"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Travel Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-ch-wLQ">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-ch-wLQ">
                                 <rect key="frame" x="160" y="409" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-hy-k6W">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-hy-k6W">
                                 <rect key="frame" x="183" y="438" width="49" height="30"/>
                                 <state key="normal" title="Submit"/>
                                 <connections>
                                     <action selector="buttonSubmit:" destination="gwg-sr-GKg" eventType="touchUpInside" id="cIn-a9-Hir"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-8J-69X">
-                                <rect key="frame" x="20" y="49" width="150" height="124"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-8J-69X">
+                                <rect key="frame" x="38" y="49" width="150" height="124"/>
                                 <state key="normal" title="Plane" image="airplane-6.png"/>
                                 <connections>
                                     <action selector="buttonPlane:" destination="gwg-sr-GKg" eventType="touchUpInside" id="eEk-oC-Vms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-NC-kAQ">
+                                <rect key="frame" x="226" y="49" width="150" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="j2V-Xs-RqC"/>
+                                    <constraint firstAttribute="width" constant="150" id="yYe-z4-RqN"/>
+                                </constraints>
+                                <state key="normal" title="Bus" image="bus.png"/>
+                                <connections>
+                                    <action selector="buttonBus:" destination="gwg-sr-GKg" eventType="touchUpInside" id="y2U-KD-u0W"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -465,21 +469,29 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="q88-dA-bhq" firstAttribute="leading" secondItem="czF-wm-kOD" secondAttribute="trailing" constant="2" id="09h-KS-swT"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="xd4-8J-69X" secondAttribute="top" id="0uO-h4-2ku"/>
                             <constraint firstItem="LLM-Rf-RF0" firstAttribute="leading" secondItem="czF-wm-kOD" secondAttribute="leading" id="0xn-uK-ye1"/>
                             <constraint firstItem="LLM-Rf-RF0" firstAttribute="trailing" secondItem="q88-dA-bhq" secondAttribute="trailing" id="2mg-cH-pzW"/>
                             <constraint firstItem="LLM-Rf-RF0" firstAttribute="centerX" secondItem="WA9-ch-wLQ" secondAttribute="centerX" id="C7l-iz-7T9"/>
+                            <constraint firstItem="xd4-8J-69X" firstAttribute="leading" secondItem="AWc-gb-FAz" secondAttribute="leadingMargin" constant="18" id="E0W-cc-xck"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="AWc-gb-FAz" secondAttribute="top" constant="49" id="EDm-cM-kfM"/>
                             <constraint firstItem="LLM-Rf-RF0" firstAttribute="top" secondItem="czF-wm-kOD" secondAttribute="bottom" constant="8" symbolic="YES" id="Gh6-U8-Ffk"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="bottom" constant="8" symbolic="YES" id="HCD-Ss-pPn"/>
                             <constraint firstItem="q88-dA-bhq" firstAttribute="trailing" secondItem="AWc-gb-FAz" secondAttribute="trailingMargin" id="IXN-nY-XWB"/>
                             <constraint firstItem="WA9-ch-wLQ" firstAttribute="centerX" secondItem="YVV-hy-k6W" secondAttribute="centerX" id="JBk-7U-bTc"/>
                             <constraint firstItem="9sy-Be-eWw" firstAttribute="centerX" secondItem="LLM-Rf-RF0" secondAttribute="centerX" id="VSC-xu-tGu"/>
-                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="trailing" secondItem="q88-dA-bhq" secondAttribute="trailing" id="bsx-Pj-x8t"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="baseline" secondItem="xd4-8J-69X" secondAttribute="baseline" id="VvJ-il-DFJ"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="leading" secondItem="xd4-8J-69X" secondAttribute="trailing" constant="38" id="Wby-8U-uMj"/>
                             <constraint firstItem="WA9-ch-wLQ" firstAttribute="top" secondItem="LLM-Rf-RF0" secondAttribute="bottom" constant="8" symbolic="YES" id="eWP-Id-YNA"/>
                             <constraint firstItem="q88-dA-bhq" firstAttribute="firstBaseline" secondItem="czF-wm-kOD" secondAttribute="firstBaseline" id="f1D-x6-h2e"/>
                             <constraint firstItem="czF-wm-kOD" firstAttribute="leading" secondItem="AWc-gb-FAz" secondAttribute="leadingMargin" id="g3v-Y0-biM"/>
-                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="leading" secondItem="q88-dA-bhq" secondAttribute="leading" id="iih-Ty-UPl"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="top" secondItem="iIi-NC-kAQ" secondAttribute="bottom" constant="37" id="gam-aC-pdG"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="centerX" secondItem="q88-dA-bhq" secondAttribute="centerX" id="itI-MR-vtr"/>
                             <constraint firstItem="YVV-hy-k6W" firstAttribute="top" secondItem="WA9-ch-wLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="mCx-kL-nrI"/>
                             <constraint firstItem="q88-dA-bhq" firstAttribute="baseline" secondItem="czF-wm-kOD" secondAttribute="baseline" id="nUb-S0-Ocv"/>
                             <constraint firstItem="q88-dA-bhq" firstAttribute="top" secondItem="czF-wm-kOD" secondAttribute="top" id="rYt-v9-iLo"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="firstBaseline" secondItem="xd4-8J-69X" secondAttribute="firstBaseline" id="ugh-EH-TMJ"/>
+                            <constraint firstItem="xd4-8J-69X" firstAttribute="centerX" secondItem="czF-wm-kOD" secondAttribute="centerX" id="xKN-aT-yzb"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
@@ -536,7 +548,7 @@
     </scenes>
     <resources>
         <image name="airplane-6.png" width="256" height="256"/>
-        <image name="bus.png" width="1112" height="1024"/>
+        <image name="bus.png" width="256" height="256"/>
         <image name="train.png" width="512" height="512"/>
         <image name="ufo.png" width="200" height="200"/>
     </resources>
