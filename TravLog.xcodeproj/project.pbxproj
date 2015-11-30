@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AD7F401BF2747F009F3D2C /* imgs in Resources */ = {isa = PBXBuildFile; fileRef = 18AD7F3F1BF2747F009F3D2C /* imgs */; };
 		DA3455111BD9DD6D00D1AC22 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3455101BD9DD6D00D1AC22 /* AppDelegate.swift */; };
 		DA3455131BD9DD6D00D1AC22 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA3455121BD9DD6D00D1AC22 /* ViewController.swift */; };
 		DA3455161BD9DD6D00D1AC22 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA3455141BD9DD6D00D1AC22 /* Main.storyboard */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18AD7F3F1BF2747F009F3D2C /* imgs */ = {isa = PBXFileReference; lastKnownFileType = folder; name = imgs; path = TravLog/imgs; sourceTree = "<group>"; };
 		DA34550D1BD9DD6D00D1AC22 /* TravLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TravLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA3455101BD9DD6D00D1AC22 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA3455121BD9DD6D00D1AC22 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -69,6 +71,7 @@
 		DA3455041BD9DD6D00D1AC22 = {
 			isa = PBXGroup;
 			children = (
+				18AD7F3F1BF2747F009F3D2C /* imgs */,
 				DA34550F1BD9DD6D00D1AC22 /* TravLog */,
 				DA3455241BD9DD6D00D1AC22 /* TravLogTests */,
 				DA34550E1BD9DD6D00D1AC22 /* Products */,
@@ -200,6 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AD7F401BF2747F009F3D2C /* imgs in Resources */,
 				DA34551B1BD9DD6D00D1AC22 /* LaunchScreen.storyboard in Resources */,
 				DA3455181BD9DD6D00D1AC22 /* Assets.xcassets in Resources */,
 				DA3455161BD9DD6D00D1AC22 /* Main.storyboard in Resources */,
@@ -416,6 +420,7 @@
 				DA34552C1BD9DD6D00D1AC22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DA34552D1BD9DD6D00D1AC22 /* Build configuration list for PBXNativeTarget "TravLogTests" */ = {
 			isa = XCConfigurationList;
@@ -424,6 +429,7 @@
 				DA34552F1BD9DD6D00D1AC22 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

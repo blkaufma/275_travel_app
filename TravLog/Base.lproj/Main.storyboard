@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vb3-bs-lvF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vb3-bs-lvF">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Main-->
@@ -18,24 +20,24 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="iG5-KT-KxK">
-                                <rect key="frame" x="107" y="257" width="200" height="222"/>
+                                <rect key="frame" x="107" y="215" width="200" height="307"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="r2X-lt-fyc">
-                                        <rect key="frame" x="38" y="0.0" width="124" height="33.5"/>
+                                        <rect key="frame" x="38" y="0.0" width="124" height="34"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Thank you for participating in the University of Vermont's Travel survey" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="scJ-oX-mPp">
-                                        <rect key="frame" x="3" y="45" width="193" height="50.5"/>
+                                        <rect key="frame" x="4" y="46" width="193" height="51"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PGB-7N-QTL">
-                                        <rect key="frame" x="71" y="108" width="57" height="30"/>
+                                        <rect key="frame" x="72" y="109" width="57" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Register"/>
                                         <connections>
@@ -43,7 +45,7 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDE-Kx-pmQ">
-                                        <rect key="frame" x="76" y="150" width="47" height="30"/>
+                                        <rect key="frame" x="77" y="151" width="47" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Sign In"/>
                                         <connections>
@@ -51,11 +53,25 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vfy-lp-eQ4">
-                                        <rect key="frame" x="56" y="192" width="88" height="30"/>
+                                        <rect key="frame" x="56" y="193" width="88" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Tell me more"/>
                                         <connections>
                                             <segue destination="Ogc-Yt-UiF" kind="show" id="KRU-GA-ETq"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cPQ-mu-kIT">
+                                        <rect key="frame" x="30" y="235" width="141" height="30"/>
+                                        <state key="normal" title="Ask the Researchers"/>
+                                        <connections>
+                                            <segue destination="7b0-Pg-nkM" kind="show" id="agc-Sn-CDI"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qiT-Vb-bdL">
+                                        <rect key="frame" x="76" y="277" width="48" height="30"/>
+                                        <state key="normal" title="Survey"/>
+                                        <connections>
+                                            <segue destination="gwg-sr-GKg" kind="show" id="xZ5-DW-hAb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -83,7 +99,6 @@
         <!--Sign In-->
         <scene sceneID="rcw-fz-ecE">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="eFc-L4-nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController title="Sign In" id="GLZ-JE-sNk" customClass="SignInController" customModule="TravLog" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="LKt-m5-Jb1"/>
@@ -94,10 +109,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V19-BJ-JAL">
-                                <rect key="frame" x="152" y="357" width="110" height="20.5"/>
+                                <rect key="frame" x="152" y="357" width="110" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1cp-QG-njy">
@@ -121,6 +136,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eFc-L4-nkn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2523" y="305"/>
         </scene>
@@ -137,10 +153,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tell Me More Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pq0-gp-lH3">
-                                <rect key="frame" x="129.5" y="357.5" width="156.5" height="20.5"/>
+                                <rect key="frame" x="129" y="358" width="157" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -156,7 +172,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lxK-0E-Xzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="1198"/>
+            <point key="canvasLocation" x="2439" y="1450"/>
         </scene>
         <!--Register-->
         <scene sceneID="PlL-mW-GIT">
@@ -174,7 +190,7 @@
                                 <rect key="frame" x="149" y="357" width="116" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bwi-e7-VCI">
@@ -226,10 +242,10 @@
                                 <state key="normal" title="I Agree"/>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Terms &amp; Conditions" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z6L-cT-TKd">
-                                <rect key="frame" x="132" y="358" width="150.5" height="20.5"/>
+                                <rect key="frame" x="132" y="358" width="151" height="21"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -298,17 +314,17 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="k3o-zZ-hqI">
-                                <rect key="frame" x="107" y="288.5" width="200" height="159.5"/>
+                                <rect key="frame" x="107" y="288" width="200" height="160"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="You traveled as far as Saturn in the last 90 days!" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rug-DW-MFU">
-                                        <rect key="frame" x="0.0" y="0.0" width="200" height="33.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="34"/>
                                         <animations/>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e7R-lh-8mN">
-                                        <rect key="frame" x="42" y="45" width="115" height="30"/>
+                                        <rect key="frame" x="43" y="46" width="115" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Survey Waiting..."/>
                                         <connections>
@@ -316,15 +332,12 @@
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YXt-X1-P4s">
-                                        <rect key="frame" x="15" y="87" width="170" height="30"/>
+                                        <rect key="frame" x="15" y="88" width="170" height="30"/>
                                         <animations/>
                                         <state key="normal" title="Contact the Researchers"/>
-                                        <connections>
-                                            <segue destination="7b0-Pg-nkM" kind="show" id="Gwb-RM-bL3"/>
-                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cer-ns-Azy">
-                                        <rect key="frame" x="40" y="129" width="119" height="30"/>
+                                        <rect key="frame" x="41" y="130" width="119" height="30"/>
                                         <animations/>
                                         <state key="normal" title="About the Survey"/>
                                         <connections>
@@ -364,26 +377,131 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Survey Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TdE-fu-mby">
-                                <rect key="frame" x="151.5" y="357.5" width="111" height="20.5"/>
-                                <animations/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="9sy-Be-eWw">
+                                <rect key="frame" x="132" y="20" width="150" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="How did you travel?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jRg-Aw-So1">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="21"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="leading" secondItem="9sy-Be-eWw" secondAttribute="leadingMargin" id="6Pc-tT-H9T"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="top" id="A6W-Tg-sui"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="leading" secondItem="9sy-Be-eWw" secondAttribute="leading" id="BCd-tt-W9W"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="leading" secondItem="9sy-Be-eWw" secondAttribute="leading" id="CJL-Mq-td9"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="leading" secondItem="9sy-Be-eWw" secondAttribute="leading" id="JSh-rP-Ld8"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="centerY" secondItem="9sy-Be-eWw" secondAttribute="centerY" id="UD5-En-IHG"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="topMargin" id="cd2-Mq-vgW"/>
+                                    <constraint firstAttribute="bottom" secondItem="jRg-Aw-So1" secondAttribute="bottom" id="dMH-Sy-cM6"/>
+                                    <constraint firstAttribute="bottom" secondItem="jRg-Aw-So1" secondAttribute="bottom" id="eKu-3r-Ufa"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="centerX" secondItem="9sy-Be-eWw" secondAttribute="centerX" id="g4c-mg-SuE"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="trailing" secondItem="9sy-Be-eWw" secondAttribute="trailingMargin" id="h61-Pw-cTw"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="top" id="kEu-ZB-gsX"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="leading" secondItem="9sy-Be-eWw" secondAttribute="leading" id="lpp-4k-HZq"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="bottom" secondItem="9sy-Be-eWw" secondAttribute="bottomMargin" id="oex-XX-dQu"/>
+                                    <constraint firstAttribute="trailing" secondItem="jRg-Aw-So1" secondAttribute="trailing" id="sDk-ca-BlI"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="top" id="zpg-Wh-P6F"/>
+                                    <constraint firstItem="jRg-Aw-So1" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="top" id="zra-42-bqC"/>
+                                    <constraint firstAttribute="trailing" secondItem="jRg-Aw-So1" secondAttribute="trailing" id="zrm-Wm-cbB"/>
+                                </constraints>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czF-wm-kOD">
+                                <rect key="frame" x="20" y="210" width="186" height="153"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="153" id="PwE-0V-lpG"/>
+                                </constraints>
+                                <state key="normal" title="Train" image="train.png"/>
+                                <connections>
+                                    <action selector="buttonTrain:" destination="gwg-sr-GKg" eventType="touchUpInside" id="S7E-8E-9qt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q88-dA-bhq">
+                                <rect key="frame" x="208" y="210" width="186" height="153"/>
+                                <state key="normal" title="Other" image="ufo.png"/>
+                                <connections>
+                                    <action selector="buttonOther:" destination="gwg-sr-GKg" eventType="touchUpInside" id="HC8-yZ-Lee"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LLM-Rf-RF0">
+                                <rect key="frame" x="20" y="371" width="374" height="30"/>
+                                <state key="normal" title="I didn't travel"/>
+                                <connections>
+                                    <action selector="buttonDidntTravel:" destination="gwg-sr-GKg" eventType="touchUpInside" id="gMo-3c-EmE"/>
+                                    <segue destination="gGX-bt-7ut" kind="show" id="YTy-8N-iGF"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Travel Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WA9-ch-wLQ">
+                                <rect key="frame" x="160" y="409" width="94" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVV-hy-k6W">
+                                <rect key="frame" x="183" y="438" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="buttonSubmit:" destination="gwg-sr-GKg" eventType="touchUpInside" id="cIn-a9-Hir"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" showsTouchWhenHighlighted="YES" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xd4-8J-69X">
+                                <rect key="frame" x="38" y="49" width="150" height="124"/>
+                                <state key="normal" title="Plane" image="airplane-6.png"/>
+                                <connections>
+                                    <action selector="buttonPlane:" destination="gwg-sr-GKg" eventType="touchUpInside" id="eEk-oC-Vms"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iIi-NC-kAQ">
+                                <rect key="frame" x="226" y="49" width="150" height="124"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="124" id="j2V-Xs-RqC"/>
+                                    <constraint firstAttribute="width" constant="150" id="yYe-z4-RqN"/>
+                                </constraints>
+                                <state key="normal" title="Bus" image="bus.png"/>
+                                <connections>
+                                    <action selector="buttonBus:" destination="gwg-sr-GKg" eventType="touchUpInside" id="y2U-KD-u0W"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="TdE-fu-mby" firstAttribute="centerX" secondItem="AWc-gb-FAz" secondAttribute="centerX" id="AAV-UQ-eVZ"/>
-                            <constraint firstItem="TdE-fu-mby" firstAttribute="centerY" secondItem="AWc-gb-FAz" secondAttribute="centerY" id="aMh-nk-RvQ"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="leading" secondItem="czF-wm-kOD" secondAttribute="trailing" constant="2" id="09h-KS-swT"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="xd4-8J-69X" secondAttribute="top" id="0uO-h4-2ku"/>
+                            <constraint firstItem="LLM-Rf-RF0" firstAttribute="leading" secondItem="czF-wm-kOD" secondAttribute="leading" id="0xn-uK-ye1"/>
+                            <constraint firstItem="LLM-Rf-RF0" firstAttribute="trailing" secondItem="q88-dA-bhq" secondAttribute="trailing" id="2mg-cH-pzW"/>
+                            <constraint firstItem="LLM-Rf-RF0" firstAttribute="centerX" secondItem="WA9-ch-wLQ" secondAttribute="centerX" id="C7l-iz-7T9"/>
+                            <constraint firstItem="xd4-8J-69X" firstAttribute="leading" secondItem="AWc-gb-FAz" secondAttribute="leadingMargin" constant="18" id="E0W-cc-xck"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="AWc-gb-FAz" secondAttribute="top" constant="49" id="EDm-cM-kfM"/>
+                            <constraint firstItem="LLM-Rf-RF0" firstAttribute="top" secondItem="czF-wm-kOD" secondAttribute="bottom" constant="8" symbolic="YES" id="Gh6-U8-Ffk"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="top" secondItem="9sy-Be-eWw" secondAttribute="bottom" constant="8" symbolic="YES" id="HCD-Ss-pPn"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="trailing" secondItem="AWc-gb-FAz" secondAttribute="trailingMargin" id="IXN-nY-XWB"/>
+                            <constraint firstItem="WA9-ch-wLQ" firstAttribute="centerX" secondItem="YVV-hy-k6W" secondAttribute="centerX" id="JBk-7U-bTc"/>
+                            <constraint firstItem="9sy-Be-eWw" firstAttribute="centerX" secondItem="LLM-Rf-RF0" secondAttribute="centerX" id="VSC-xu-tGu"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="baseline" secondItem="xd4-8J-69X" secondAttribute="baseline" id="VvJ-il-DFJ"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="leading" secondItem="xd4-8J-69X" secondAttribute="trailing" constant="38" id="Wby-8U-uMj"/>
+                            <constraint firstItem="WA9-ch-wLQ" firstAttribute="top" secondItem="LLM-Rf-RF0" secondAttribute="bottom" constant="8" symbolic="YES" id="eWP-Id-YNA"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="firstBaseline" secondItem="czF-wm-kOD" secondAttribute="firstBaseline" id="f1D-x6-h2e"/>
+                            <constraint firstItem="czF-wm-kOD" firstAttribute="leading" secondItem="AWc-gb-FAz" secondAttribute="leadingMargin" id="g3v-Y0-biM"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="top" secondItem="iIi-NC-kAQ" secondAttribute="bottom" constant="37" id="gam-aC-pdG"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="centerX" secondItem="q88-dA-bhq" secondAttribute="centerX" id="itI-MR-vtr"/>
+                            <constraint firstItem="YVV-hy-k6W" firstAttribute="top" secondItem="WA9-ch-wLQ" secondAttribute="bottom" constant="8" symbolic="YES" id="mCx-kL-nrI"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="baseline" secondItem="czF-wm-kOD" secondAttribute="baseline" id="nUb-S0-Ocv"/>
+                            <constraint firstItem="q88-dA-bhq" firstAttribute="top" secondItem="czF-wm-kOD" secondAttribute="top" id="rYt-v9-iLo"/>
+                            <constraint firstItem="iIi-NC-kAQ" firstAttribute="firstBaseline" secondItem="xd4-8J-69X" secondAttribute="firstBaseline" id="ugh-EH-TMJ"/>
+                            <constraint firstItem="xd4-8J-69X" firstAttribute="centerX" secondItem="czF-wm-kOD" secondAttribute="centerX" id="xKN-aT-yzb"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
+                    <connections>
+                        <outlet property="labelMode" destination="WA9-ch-wLQ" id="LoX-Zp-AID"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="taT-SB-s7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="2252"/>
+            <point key="canvasLocation" x="2439" y="2318"/>
         </scene>
         <!--Contact-->
         <scene sceneID="Nvm-6N-Vv2">
@@ -397,30 +515,47 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Contact Us Screen" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Smb-3V-Ed1">
-                                <rect key="frame" x="135" y="357.5" width="144" height="20.5"/>
-                                <animations/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H1m-ST-Z9Q">
+                                <rect key="frame" x="169" y="49" width="76" height="30"/>
+                                <state key="normal" title="Send Email"/>
+                                <connections>
+                                    <action selector="SendEmail:" destination="7b0-Pg-nkM" eventType="touchUpInside" id="Qhc-py-O4z"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Have a question for the research staff?" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QBy-hK-zcc">
+                                <rect key="frame" x="23" y="20" width="369" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Smb-3V-Ed1" firstAttribute="centerX" secondItem="kNz-Jk-gwJ" secondAttribute="centerX" id="GRx-Zu-CnT"/>
-                            <constraint firstItem="Smb-3V-Ed1" firstAttribute="centerY" secondItem="kNz-Jk-gwJ" secondAttribute="centerY" id="Zqn-Gk-ohs"/>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="centerX" secondItem="kNz-Jk-gwJ" secondAttribute="centerX" id="Bzj-Fl-JIC"/>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="top" secondItem="t9H-aQ-sJH" secondAttribute="bottom" id="Dko-yq-7S6"/>
+                            <constraint firstItem="H1m-ST-Z9Q" firstAttribute="top" secondItem="QBy-hK-zcc" secondAttribute="bottom" constant="8" symbolic="YES" id="Ie4-hG-ccV"/>
+                            <constraint firstItem="QBy-hK-zcc" firstAttribute="leading" secondItem="kNz-Jk-gwJ" secondAttribute="leadingMargin" constant="3" id="S4f-li-61g"/>
+                            <constraint firstItem="H1m-ST-Z9Q" firstAttribute="centerX" secondItem="QBy-hK-zcc" secondAttribute="centerX" id="aSV-6V-8Bi"/>
                         </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TVG-C3-b03" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2523" y="3156"/>
+            <point key="canvasLocation" x="2931" y="2318"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="airplane-6.png" width="256" height="256"/>
+        <image name="bus.png" width="256" height="256"/>
+        <image name="train.png" width="512" height="512"/>
+        <image name="ufo.png" width="200" height="200"/>
+    </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="9qk-1d-rHQ"/>
+        <segue reference="liz-Si-82D"/>
+        <segue reference="xZ5-DW-hAb"/>
+        <segue reference="YTy-8N-iGF"/>
         <segue reference="bCM-Of-8qQ"/>
     </inferredMetricsTieBreakers>
 </document>
