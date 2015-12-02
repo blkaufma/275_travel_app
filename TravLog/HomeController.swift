@@ -2,7 +2,7 @@
 //  HomeController.swift
 //  TravLog
 //
-//  Created by Ben Kaufman on 10/28/15.
+//  Created by Paul D'Amora on 10/28/15.
 //  Copyright © 2015 TravLog. All rights reserved.
 //
 
@@ -77,7 +77,7 @@ class HomeController: UIViewController, CLLocationManagerDelegate , PiechartDele
     func getRefresh() {
         
         //Username
-        let userName = "FlerpMerp"
+        let userName = "IanFoertsch"
         
         let urlstr : String = "http://ec2-54-208-153-2.compute-1.amazonaws.com/Travlog/location?userIdentifier="+userName
         print (urlstr)
